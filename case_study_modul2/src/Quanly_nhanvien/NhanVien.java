@@ -1,32 +1,34 @@
 package Quanly_nhanvien;
 
-public class NhanVien implements Comparable<NhanVien>{
+import java.io.Serializable;
+
+public class NhanVien implements Comparable<NhanVien>,Serializable {
     private int idNV;
     private String name;
     private int age;
 
+    private String phone;
+    private String address;
+
     public NhanVien() {
     }
 
-
-    public NhanVien(int id, String name, int age) {
+    public NhanVien(int id, String name, int age, String phone, String address) {
         this.idNV = id;
         this.name = name;
         this.age = age;
+        this.phone =phone;
+        this.address = address;
     }
 
     public double getSalary() {
         return 0;
     }
-
-    ;
-
-
-    public int getId() {
+    public int getIdNV() {
         return idNV;
     }
 
-    public void setId(int id) {
+    public void setIdNV(int id) {
         this.idNV = id;
     }
 
@@ -46,11 +48,31 @@ public class NhanVien implements Comparable<NhanVien>{
         this.age = age;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
-        return "id=" + idNV +
+        return "NhanVien{" +
+                "idNV=" + idNV +
                 ", name='" + name + '\'' +
-                ", age=" + age;
+                ", age=" + age +
+                ", phone=" + phone +
+                ", address='" + address + '\'' +
+                '}';
     }
 
     @Override

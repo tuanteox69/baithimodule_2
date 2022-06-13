@@ -3,12 +3,12 @@ package Quanly_nhanvien;
 public class FullTime extends NhanVien {
     private int heSo;
 
-    public FullTime() {
-        super();
+    public FullTime(int heSo) {
+        this.heSo = heSo;
     }
 
-    public FullTime(int id, String name, int age, int heSo) {
-        super(id, name, age);
+    public FullTime(int id, String name, int age, String phone, String address, int heSo) {
+        super(id, name, age, phone, address);
         this.heSo = heSo;
     }
 
