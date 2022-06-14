@@ -152,7 +152,7 @@ public class ManagerProduct {
                     return;
                 } else {
                     System.out.println("Mã sản không tồn tại");
-                    System.out.println("Nhập y để tiếp tục");
+                    System.out.println("Nhập y để tiếp tục , enter để thoát ");
                     String yes = scanner.nextLine();
                     if (!yes.equals("y")){
                         break;
