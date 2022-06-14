@@ -1,6 +1,6 @@
-import Controllers.ManageNhanVien;
-import Controllers.ManagerAccount;
-import Quanly_nhanvien.NhanVien;
+import Manager.ManageNhanVien;
+import Manager.ManagerAccount;
+import Models.NhanVien;
 
 import java.util.ArrayList;
 
